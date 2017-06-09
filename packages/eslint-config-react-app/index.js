@@ -109,6 +109,8 @@ module.exports = {
     },
   },
 
+  extends: ['eslint-config-vtex', 'eslint-config-vtex-react'],
+
   rules: {
     // http://eslint.org/docs/rules/
     'array-callback-return': 'warn',

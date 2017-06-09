@@ -162,7 +162,7 @@ module.exports = function(
     path.join(ownPath, 'node_modules', '.bin', 'eslint'),
     [
       '-c',
-      require.resolve('../config/eslint.js'),
+      require.resolve('eslint-config-vtex-react-app'),
       '--fix',
       path.join(appPath, 'src'),
     ],
