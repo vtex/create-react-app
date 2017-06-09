@@ -147,8 +147,6 @@ module.exports = function(
     'react-intl',
   ]);
 
-  console.log(args);
-
   console.log(`Installing dependencies using ${command}...`);
   console.log();
 
