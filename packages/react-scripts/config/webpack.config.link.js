@@ -345,23 +345,25 @@ module.exports = {
     new HtmlWebpackExternalsPlugin({
       externals: appPackage.externalReact
         ? [
-            {
-              module: 'react',
-              entry: 'https://unpkg.com/react@15.6.1/dist/react.min.js',
-              global: 'React',
-              attributes: {
-                crossorigin: 'anonymous',
-              },
+          {
+            module: 'react',
+            entry:
+              'https://unpkg.com/react@16.3.2/umd/react.production.min.js',
+            global: 'React',
+            attributes: {
+              crossorigin: 'anonymous',
             },
-            {
-              module: 'react-dom',
-              entry: 'https://unpkg.com/react-dom@15.6.1/dist/react-dom.min.js',
-              global: 'ReactDOM',
-              attributes: {
-                crossorigin: 'anonymous',
-              },
+          },
+          {
+            module: 'react-dom',
+            entry:
+              'https://unpkg.com/react-dom@16.3.2/umd/react-dom.production.min.js',
+            global: 'ReactDOM',
+            attributes: {
+              crossorigin: 'anonymous',
             },
-          ]
+          },
+        ]
         : [],
     }),
     // Makes some environment variables available to the JS code, for example:
