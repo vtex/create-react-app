@@ -198,7 +198,9 @@ module.exports = {
               // @remove-on-eject-begin
               babelrc: false,
               presets: [require.resolve('babel-preset-react-app')],
-              plugins: [require.resolve('add-react-displayname')],
+              plugins: [
+                require.resolve('babel-plugin-transform-react-display-name'),
+              ],
               // @remove-on-eject-end
               compact: true,
             },
@@ -345,25 +347,25 @@ module.exports = {
     new HtmlWebpackExternalsPlugin({
       externals: appPackage.externalReact
         ? [
-          {
-            module: 'react',
-            entry:
-              'https://unpkg.com/react@16.3.2/umd/react.production.min.js',
-            global: 'React',
-            attributes: {
-              crossorigin: 'anonymous',
+            {
+              module: 'react',
+              entry:
+                'https://unpkg.com/react@16.3.2/umd/react.production.min.js',
+              global: 'React',
+              attributes: {
+                crossorigin: 'anonymous',
+              },
             },
-          },
-          {
-            module: 'react-dom',
-            entry:
-              'https://unpkg.com/react-dom@16.3.2/umd/react-dom.production.min.js',
-            global: 'ReactDOM',
-            attributes: {
-              crossorigin: 'anonymous',
+            {
+              module: 'react-dom',
+              entry:
+                'https://unpkg.com/react-dom@16.3.2/umd/react-dom.production.min.js',
+              global: 'ReactDOM',
+              attributes: {
+                crossorigin: 'anonymous',
+              },
             },
-          },
-        ]
+          ]
         : [],
     }),
     // Makes some environment variables available to the JS code, for example:
