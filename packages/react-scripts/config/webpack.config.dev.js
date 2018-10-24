@@ -310,7 +310,7 @@ module.exports = {
                 global: 'React',
                 entry: {
                   path:
-                    'https://unpkg.com/react@16.3.2/umd/react.production.min.js',
+                    'https://unpkg.com/react@16.6.0/umd/react.production.min.js',
                   attributes: {
                     crossorigin: 'anonymous',
                   },
@@ -321,7 +321,7 @@ module.exports = {
                 global: 'ReactDOM',
                 entry: {
                   path:
-                    'https://unpkg.com/react-dom@16.3.2/umd/react-dom.production.min.js',
+                    'https://unpkg.com/react-dom@16.6.0/umd/react-dom.production.min.js',
                   attributes: {
                     crossorigin: 'anonymous',
                   },
