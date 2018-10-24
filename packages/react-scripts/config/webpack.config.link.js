@@ -350,7 +350,7 @@ module.exports = {
             {
               module: 'react',
               entry:
-                'https://unpkg.com/react@16.3.2/umd/react.production.min.js',
+                'https://unpkg.com/react@16.6.0/umd/react.production.min.js',
               global: 'React',
               attributes: {
                 crossorigin: 'anonymous',
@@ -359,7 +359,7 @@ module.exports = {
             {
               module: 'react-dom',
               entry:
-                'https://unpkg.com/react-dom@16.3.2/umd/react-dom.production.min.js',
+                'https://unpkg.com/react-dom@16.6.0/umd/react-dom.production.min.js',
               global: 'ReactDOM',
               attributes: {
                 crossorigin: 'anonymous',
