@@ -64,6 +64,7 @@ module.exports = (resolve, rootDir, isEjecting) => {
     'snapshotSerializers',
     'testPathIgnorePatterns',
     'testMatch',
+    'setupTestFrameworkScriptFile',
   ];
   if (overrides) {
     supportedKeys.forEach(key => {
